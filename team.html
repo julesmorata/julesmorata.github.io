@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste Expertise et Convivialité</title>
+    <title>Liste Expertise et Convivialité - Notre équipe</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-     <h1>Site en construction, il sera bientôt disponible</h1>
-    <!--
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Nos objectifs</a></li>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle Menu">
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Présentation</a></li>
                 <li><a href="team.html">Notre équipe</a></li>
+                <li><a href="data/programme.pdf" download="Programme_Liste Expertise et Convivialité" target="_blank">Slides de présentation</a></li>
             </ul>
         </nav>
     </header>
@@ -23,132 +25,438 @@
         <section class="team">
             <h1>Notre équipe</h1>
             <div class="team-grid">
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Françoise Cwiek Nguyen">
+                <!-- Repeat for each member -->
+                <div class="team-member" onclick="showMemberDetails('cwiek')">
+                    <img src="img/CWIEK.jpg" alt="Françoise Cwiek Nguyen">
                     <p>Françoise Cwiek Nguyen</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
+                <div class="team-member" onclick="showMemberDetails('coquelle')">
                     <img src="img/test.jpeg" alt="Arnaud Coquelle">
                     <p>Arnaud Coquelle</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Fabrice Tur">
+                <div class="team-member" onclick="showMemberDetails('tur')">
+                    <img src="img/TUR.png" alt="Fabrice Tur">
                     <p>Fabrice Tur</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Jean-Christophe Carpentier">
+                <div class="team-member" onclick="showMemberDetails('carpentier')">
+                    <img src="img/CARPENTIER.jpg" alt="Jean-Christophe Carpentier">
                     <p>Jean-Christophe Carpentier</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Marie-Pierre Cottineau">
+                <div class="team-member" onclick="showMemberDetails('cottineau')">
+                    <img src="img/COTTINEAU.png" alt="Marie-Pierre Cottineau">
                     <p>Marie-Pierre Cottineau</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Pierre Costa">
+                <div class="team-member" onclick="showMemberDetails('costa')">
+                    <img src="img/COSTA.png" alt="Pierre Costa">
                     <p>Pierre Costa</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Philippe Fabre">
+                <div class="team-member" onclick="showMemberDetails('fabre')">
+                    <img src="img/FABRE.jpg" alt="Philippe Fabre">
                     <p>Philippe Fabre</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Marie Rutyna">
+                <div class="team-member" onclick="showMemberDetails('rutyna')">
+                    <img src="img/RUTYNA.jpg" alt="Marie Rutyna">
                     <p>Marie Rutyna</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="John Lewis">
+                <div class="team-member" onclick="showMemberDetails('lewis')">
+                    <img src="img/LEWIS.jpg" alt="John Lewis">
                     <p>John Lewis</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Jules Morata">
+                <div class="team-member" onclick="showMemberDetails('morata')">
+                    <img src="img/MORATA.jpg" alt="Jules Morata">
                     <p>Jules Morata</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Eric Roussel">
+                <div class="team-member" onclick="showMemberDetails('roussel')">
+                    <img src="img/ROUSSEL.jpg" alt="Eric Roussel">
                     <p>Eric Roussel</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Isabelle Davalos">
-                    <p>Isabelle Davalos</p>the
+                <div class="team-member" onclick="showMemberDetails('davalos')">
+                    <img src="img/DAVALOS.png" alt="Isabelle Davalos">
+                    <p>Isabelle Davalos</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Gregory Macqueron">
+                <div class="team-member" onclick="showMemberDetails('macqueron')">
+                    <img src="img/MACQUERON.jpeg" alt="Gregory Macqueron">
                     <p>Gregory Macqueron</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Denis Despaux">
+                <div class="team-member" onclick="showMemberDetails('despaux')">
+                    <img src="img/DESPAUX.JPG" alt="Denis Despaux">
                     <p>Denis Despaux</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Bruno Natale">
+                <div class="team-member" onclick="showMemberDetails('natale')">
+                    <img src="img/NATALE.jpg" alt="Bruno Natale">
                     <p>Bruno Natale</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Maud Bauer">
+                <div class="team-member" onclick="showMemberDetails('bauer')">
+                    <img src="img/BAUER.jpg" alt="Maud Bauer">
                     <p>Maud Bauer</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Christine Rault">
+                <div class="team-member" onclick="showMemberDetails('rault')">
+                    <img src="img/RAULT.jpg" alt="Christine Rault">
                     <p>Christine Rault</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Richard Moro">
+                <div class="team-member" onclick="showMemberDetails('moro')">
+                    <img src="img/MORO.jpg" alt="Richard Moro">
                     <p>Richard Moro</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Pierre Baudean">
+                <div class="team-member" onclick="showMemberDetails('baudean')">
+                    <img src="img/BAUDEAN.jpg" alt="Pierre Baudean">
                     <p>Pierre Baudean</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Odile Denos">
+                <div class="team-member" onclick="showMemberDetails('desnos')">
+                    <img src="img/DESNOS.JPG" alt="Odile Denos">
                     <p>Odile Denos</p>
                 </div>
             </div>
             <h1>Suppléants</h1>
             <div class="team-grid">
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Françoise Carbonell">
+                <!-- Repeat for each member -->
+                <div class="team-member" onclick="showMemberDetails('carbonell')">
+                    <img src="img/CARBONELL.jpg" alt="Françoise Carbonell">
                     <p>Françoise Carbonell</p>
                 </div>
-                <div class="team-member" onclick="showMemberDetails('john')">
-                    <img src="img/test.jpeg" alt="Michel Grezels">
+                <div class="team-member" onclick="showMemberDetails('grezels')">
+                    <img src="img/GREZELS.JPG" alt="Michel Grezels">
                     <p>Michel Grezels</p>
                 </div>
             </div>
         </section>
 
-        <div class="modal" id="john" style="display:none;">
+        <!-- Modal for Member Details with Animation -->
+        
+        <div class="modal" id="cwiek" style="display:none;">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('john')">&times;</span>
+                <span class="close" onclick="closeModal('cwiek')">&times;</span>
                 <div class="member-details">
-                    <img src="img/test.jpeg" alt="John Doe" class="modal-photo">
+                    <img src="img/CWIEK.jpg" alt="Fraçoise Cwiek Nguyen" class="modal-photo">
                     <div class="modal-text">
-                        <h2>John Doe</h2>
-                        <p>Role: Candidate for President</p>
-                        <p>Bio: John is a seasoned chess master and has been involved in chess governance for over 15 years...</p>
+                        <h2>Françoise Cwiek</h2>
+                        <p>Age : 69 ans</p>
+                        <p>Profession : Retraité</p>
+                        <p>Responsabilités : Vice-présidente et Trésorière de la Ligue d'Occitanie, Vice-Présidente du Comité de Haute-Garonne</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="modal" id="anna" style="display:none;">
+        <div class="modal" id="coquelle" style="display:none;">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('anna')">&times;</span>
+                <span class="close" onclick="closeModal('coquelle')">&times;</span>
                 <div class="member-details">
-                    <img src="img/test.jpeg" alt="Anna Smith" class="modal-photo">
+                    <img src="img/test.jpeg" alt="Arnaud Coquelle" class="modal-photo">
                     <div class="modal-text">
-                        <h2>Anna Smith</h2>
-                        <p>Role: Candidate for Vice President</p>
-                        <p>Bio: Anna has a background in chess coaching and event management, bringing innovative ideas...</p>
+                        <h2>Arnaud Coquelle</h2>
+                        <p>Age : 52 ans</p>
+                        <p>Profession : Chercheur</p>
+                        <p>Responsabilités : Membre du CD de la Ligue d'Occitanie (Jeunes), Président du club d'EC Montpellier</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="tur" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('tur')">&times;</span>
+                <div class="member-details">
+                    <img src="img/TUR.png" alt="Fabrice Tur" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Fabrice Tur</h2>
+                        <p>Age : 56 ans</p>
+                        <p>Profession : Informaticien</p>
+                        <p>Responsabilités : Président du Comité de l'Hérault, Président du club de Lavérune, Arbitre international</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="carpentier" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('carpentier')">&times;</span>
+                <div class="member-details">
+                    <img src="img/CARPENTIER.jpg" alt="Jean-Christophe Carpentier" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Jean-Christophe Carpentier</h2>
+                        <p>Age : 57 ans</p>
+                        <p>Profession : Technicien aéronautique</p>
+                        <p>Responsabilités : Président de la Commission Technique de la FFE, Membre du Bureau de la Ligue d'Occitanie et du club de Colomiers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal" id="cottineau" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('cottineau')">&times;</span>
+                <div class="member-details">
+                    <img src="img/COTTINEAU.png" alt="Marie-Pierre Cottineau" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Marie-Pierre Cottineau</h2>
+                        <p>Age : 61 ans</p>
+                        <p>Profession : Transcriptrice</p>
+                        <p>Responsabilités : Membre de la Commission Sociale de la FFE et du Bureau de l'Association des Echecs pour Aveugles, Trésorière du club de Toulouse Lardenne</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="costa" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('costa')">&times;</span>
+                <div class="member-details">
+                    <img src="img/COSTA.png" alt="Pierre Costa" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Pierre Costa</h2>
+                        <p>Age : 72 ans</p>
+                        <p>Profession : Chirurgien en retraite</p>
+                        <p>Responsabilités : Président du Comité du Gard, Membre du club de Nîmes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="fabre" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('fabre')">&times;</span>
+                <div class="member-details">
+                    <img src="img/FABRE.jpg" alt="Philippe Fabre" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Philippe Fabre</h2>
+                        <p>Age : 51 ans</p>
+                        <p>Profession : Ingénieur</p>
+                        <p>Responsabilités : Secrétaire de la Ligue d'Occitanie, Président du club d'Albi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="rutyna" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('rutyna')">&times;</span>
+                <div class="member-details">
+                    <img src="img/RUTYNA.jpg" alt="Marie Rutyna" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Marie Rutyna</h2>
+                        <p>Age : 41 ans</p>
+                        <p>Profession : Professeure des écoles</p>
+                        <p>Responsabilités : Responsable Mixité du Comité du Gard, Membre du club de Caissargues</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="lewis" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('lewis')">&times;</span>
+                <div class="member-details">
+                    <img src="img/LEWIS.jpg" alt="John Lewis" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>John Lewis</h2>
+                        <p>Age : 38 ans</p>
+                        <p>Profession : Directeur d'école</p>
+                        <p>Responsabilités : Membre du club de Nîmes, Arbitre international, Directeur national de l'arbitrage de 2021 à 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="morata" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('morata')">&times;</span>
+                <div class="member-details">
+                    <img src="img/MORATA.jpg" alt="Jules Morata" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Jules Morata</h2>
+                        <p>Age : 24 ans</p>
+                        <p>Profession : Doctorant</p>
+                        <p>Responsabilités : Membre du club de Pibrac, Entraîneur bénévole</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="roussel" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('roussel')">&times;</span>
+                <div class="member-details">
+                    <img src="img/ROUSSEL.jpg" alt="Eric Roussel" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Eric Roussel</h2>
+                        <p>Age : 62 ans</p>
+                        <p>Profession : Retraité</p>
+                        <p>Responsabilités : Président du club de Colombiers-Maraussan</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="davalos" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('davalos')">&times;</span>
+                <div class="member-details">
+                    <img src="img/DAVALOS.png" alt="Isabelle Davalos" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Isabelle Davalos</h2>
+                        <p>Age : 43 ans</p>
+                        <p>Profession : Professeure des écoles</p>
+                        <p>Responsabilités : Présidente du club de Trébons</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="macqueron" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('macqueron')">&times;</span>
+                <div class="member-details">
+                    <img src="img/MACQUERON.jpeg" alt="Grégory Macqueron" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Grégory Macqueron</h2>
+                        <p>Age : 44 ans</p>
+                        <p>Profession : Consultant coach</p>
+                        <p>Responsabilités : Président du club de Pibrac</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="despaux" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('despaux')">&times;</span>
+                <div class="member-details">
+                    <img src="img/DESPAUX.JPG" alt="Denis Despaux" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Denis Despaux</h2>
+                        <p>Age : 57 ans</p>
+                        <p>Profession : Conseiller formation</p>
+                        <p>Responsabilités : Président du Comité du Gers, Président du club d'Auch</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="natale" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('natale')">&times;</span>
+                <div class="member-details">
+                    <img src="img/NATALE.jpg" alt="Bruno Natale" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Bruno Natale</h2>
+                        <p>Age : 64 ans</p>
+                        <p>Profession : Monteur en climatisation</p>
+                        <p>Responsabilités : Responsable adjoint compétition du club de Montauban</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="bauer" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bauer')">&times;</span>
+                <div class="member-details">
+                    <img src="img/BAUER.jpg" alt="Maud Bauer" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Maud Bauer</h2>
+                        <p>Age : 40 ans</p>
+                        <p>Profession : Attachée commerciale</p>
+                        <p>Responsabilités : Membre du CD de la FFE, Trésorière du club de Saint-Céré</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="rault" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('rault')">&times;</span>
+                <div class="member-details">
+                    <img src="img/RAULT.jpg" alt="Christine Rault" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Christine Rault</h2>
+                        <p>Age : 40 ans</p>
+                        <p>Profession : Professeure des écoles</p>
+                        <p>Responsabilités : Vice-trésorière du club de Oust</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="moro" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('moro')">&times;</span>
+                <div class="member-details">
+                    <img src="img/MORO.jpg" alt="Richard Moro" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Richard Moro</h2>
+                        <p>Age : 61 ans</p>
+                        <p>Profession : Cadre dirigeant</p>
+                        <p>Responsabilités : Membre du club de Lavérune</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="baudean" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('baudean')">&times;</span>
+                <div class="member-details">
+                    <img src="img/BAUDEAN.jpg" alt="Pierre Baudéan" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Pierre Baudéan</h2>
+                        <p>Age : 42 ans</p>
+                        <p>Profession : Professeur des écoles</p>
+                        <p>Responsabilités : Membre du CD du Comité de l'Hérault, Président du club de Cers</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="desnos" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('desnos')">&times;</span>
+                <div class="member-details">
+                    <img src="img/DESNOS.JPG" alt="Odile Desnos" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Odile Desnos</h2>
+                        <p>Age : 74 ans</p>
+                        <p>Profession : Retraitée</p>
+                        <p>Responsabilités : Secrétaire du club de Narbonne</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="carbonell" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('carbonell')">&times;</span>
+                <div class="member-details">
+                    <img src="img/CARBONELL.jpg" alt="Françoise Carbonell" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Françoise Carbonell</h2>
+                        <p>Age : 64 ans</p>
+                        <p>Profession : Retraitée</p>
+                        <p>Responsabilités : Présidente du club d'Ille-sur-Têt</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="grezels" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('grezels')">&times;</span>
+                <div class="member-details">
+                    <img src="img/GREZELS.JPG" alt="Michel Grezels" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Michel Grezels</h2>
+                        <p>Age : 68 ans</p>
+                        <p>Profession : Retraité</p>
+                        <p>Responsabilités : Membre du CD de la Ligue d'Occitanie, Trésorier du Comité du Tarn-et-Garonne</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
+        
     <footer>
-        <p>&copy; 2025 Chess Governing Entity | All Rights Reserved</p>
+        <p>&copy; Liste Expertise et Convivialité 2025 | Tous droits réservés</p>
     </footer>
-    -->
+
 </body>
 </html>

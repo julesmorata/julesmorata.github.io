@@ -6,30 +6,81 @@ body {
 }
 
 header {
-    background: #333;
+    background: rgb(7, 107, 7);
     color: white;
     padding: 20px;
     font-size: 30px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+.navbar {
+    background-color: rgb(7, 107, 7);
+    padding: 20px 20px;
 }
 
-nav ul li {
-    display: inline;
+.nav-links {
+    list-style: inside;
+    display: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
     margin-right: 70px;
 }
 
-nav ul li a {
-    color: white;
+.nav-links a {
     text-decoration: none;
+    color: white;
 }
 
-nav ul li:last-child {
-    margin-right: 0; /* Ensure no extra margin after the last item */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+
+.menu-toggle.active {
+    transform: rotate(90deg);
+}
+
+.menu-toggle::before {
+    content: "\2630";
+}
+
+.menu-toggle.active::before {
+    content: "\2716";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(7, 107, 7);
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* nav ul li:last-child {
+    margin-right: 0;
+} */
 
 /* Page Content */
 main {
@@ -61,7 +112,9 @@ ul {
 }
 
 .team-member img {
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
 }
@@ -102,8 +155,8 @@ ul {
 
 .modal-photo {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    margin-left: 40px;
     margin-right: 20px;
     transition: transform 0.5s ease-out;
 }
@@ -128,10 +181,10 @@ ul {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: rgb(7, 107, 7);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 /* Transition for Photo on Click */
