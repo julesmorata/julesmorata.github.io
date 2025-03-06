@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 70px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Ensure no extra margin after the last item */
+}
+
+/* Page Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    cursor: pointer;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member p {
+    font-weight: bold;
+}
+
+/* Modal and Member Details */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.member-details {
+    display: flex;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+}
+
+.modal-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    transition: transform 0.5s ease-out;
+}
+
+.modal-text {
+    max-width: 500px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.modal.open .member-details {
+    transform: translateX(0);
+}
+
+.modal.open .modal-photo {
+    transform: translateX(-20px);
+}
+
+.modal.open .modal-text {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Transition for Photo on Click */
+.team-member img {
+    cursor: pointer;
+}
+
+.team-member img.clicked {
+    transform: translateX(-100px); /* Moves image to the left */
+}
+

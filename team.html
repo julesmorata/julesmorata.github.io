@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team - Chess Governing Entity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Nos objectifs</a></li>
+                <li><a href="team.html">Notre équipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="team">
+            <h1>Notre équipe</h1>
+            <div class="team-grid">
+                <!-- Repeat for each member -->
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Françoise Cwiek Nguyen">
+                    <p>Françoise Cwiek Nguyen</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Arnaud Coquelle">
+                    <p>Arnaud Coquelle</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Fabrice Tur">
+                    <p>Fabrice Tur</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Jean-Christophe Carpentier">
+                    <p>Jean-Christophe Carpentier</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Marie-Pierre Cottineau">
+                    <p>Marie-Pierre Cottineau</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Pierre Costa">
+                    <p>Pierre Costa</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Philippe Fabre">
+                    <p>Philippe Fabre</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Marie Rutyna">
+                    <p>Marie Rutyna</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="John Lewis">
+                    <p>John Lewis</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Jules Morata">
+                    <p>Jules Morata</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Eric Roussel">
+                    <p>Eric Roussel</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Isabelle Davalos">
+                    <p>Isabelle Davalos</p>the
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Gregory Macqueron">
+                    <p>Gregory Macqueron</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Denis Despaux">
+                    <p>Denis Despaux</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Bruno Natale">
+                    <p>Bruno Natale</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Maud Bauer">
+                    <p>Maud Bauer</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Christine Rault">
+                    <p>Christine Rault</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Richard Moro">
+                    <p>Richard Moro</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Pierre Baudean">
+                    <p>Pierre Baudean</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Odile Denos">
+                    <p>Odile Denos</p>
+                </div>
+            </div>
+            <h1>Suppléants</h1>
+            <div class="team-grid">
+                <!-- Repeat for each member -->
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Françoise Carbonell">
+                    <p>Françoise Carbonell</p>
+                </div>
+                <div class="team-member" onclick="showMemberDetails('john')">
+                    <img src="img/test.jpeg" alt="Michel Grezels">
+                    <p>Michel Grezels</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for Member Details with Animation -->
+        <div class="modal" id="john" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('john')">&times;</span>
+                <div class="member-details">
+                    <img src="img/test.jpeg" alt="John Doe" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>John Doe</h2>
+                        <p>Role: Candidate for President</p>
+                        <p>Bio: John is a seasoned chess master and has been involved in chess governance for over 15 years...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="anna" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('anna')">&times;</span>
+                <div class="member-details">
+                    <img src="img/test.jpeg" alt="Anna Smith" class="modal-photo">
+                    <div class="modal-text">
+                        <h2>Anna Smith</h2>
+                        <p>Role: Candidate for Vice President</p>
+                        <p>Bio: Anna has a background in chess coaching and event management, bringing innovative ideas...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Chess Governing Entity | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
