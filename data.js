@@ -1,125 +1,246 @@
 const structures = {
 
-    carlsbad:{
-        title:"Carlsbad",
-
-        fen:"8/2p2ppp/3p4/3P4/2P5/8/PP3PPP/8",
-
-        advantages:[
-            "Majorité de pions à l'aile dame",
-            "Possibilité d'attaque minoritaire"
-        ],
-
-        drawbacks:[
-            "Faiblesse potentielle du pion c"
-        ],
-
-        plans:[
-            "b4-b5",
-            "Contrôle de la colonne c",
-            "Pression sur c6"
-        ],
-
-        openings:[
-            "QGD Exchange",
-            "Slav Exchange"
-        ]
-    },
-
+    
     iqp:{
         title:"IQP",
-
-        fen:"8/pp3ppp/8/3P4/8/8/PP3PPP/8",
-
+        
+        fen:"8/pp3ppp/4p3/8/3P4/8/PP3PPP/8",
+        
         advantages:[
             "Activité des pièces",
             "Initiative"
         ],
-
+        
         drawbacks:[
             "Pion isolé vulnérable en finale"
         ],
 
         plans:[
-            "e4-e5",
-            "Attaque sur le roi"
+            
         ],
-
+        
         openings:[
-            "Tarrasch",
-            "Panov Attack"
+            
         ]
     },
-
+    
     hanging:{
-        title:"Hanging Pawns",
+        title:"Pions pendants",
+        
+        fen:"8/pp3ppp/4p3/8/2PP4/8/P4PPP/8",
+        
+        advantages:[
+            
+        ],
+        
+        drawbacks:[
+            
+        ],
+        
+        plans:[
+            
+        ],
+        
+        openings:[
+            
+        ]
+    },
+    
+    ck:{
+            title:"Formation Caro-Kann",
+            
+            fen:"8/pp3ppp/2p1p3/8/3P4/2P5/PP3PPP/8",
+            
+            advantages:[
+                
+            ],
+            
+            drawbacks:[
+                
+            ],
+            
+            plans:[
+                
+            ],
+            
+            openings:[
+                
+            ]
+        },
 
-        fen:"8/8/8/2PP4/8/8/8/8",
+    slav:{
+            title:"Formation Slave",
+            
+            fen:"8/pp3ppp/2p1p3/8/3P4/4P3/PP3PPP/8",
+            
+            advantages:[
+                
+            ],
+            
+            drawbacks:[
+                
+            ],
+            
+            plans:[
+                
+            ],
+            
+            openings:[
+                
+            ]
+        },
+
+    carlsbad:{
+        title:"Carlsbad",
+
+        fen:"8/ppp2ppp/8/3p4/3P4/4P3/PP3PPP/8",
 
         advantages:[
-            "Contrôle central"
+            
         ],
 
         drawbacks:[
-            "Peuvent devenir des cibles"
+            
         ],
 
         plans:[
-            "Avance d5-d6",
-            "Avance c5-c6"
+            
         ],
 
         openings:[
-            "Tarrasch",
-            "Semi-Tarrasch"
+            
+        ]
+    },
+
+    stonewall:{
+        title:"Stonewall",
+
+        fen:"8/ppp2ppp/8/3p4/3P4/4P3/PP3PPP/8",
+
+        advantages:[
+            
+        ],
+
+        drawbacks:[
+            
+        ],
+
+        plans:[
+            
+        ],
+
+        openings:[
+            
+        ]
+    },
+
+    grunfeld:{
+        title:"Centre Grünfeld",
+
+        fen:"8/pp2pppp/8/2p5/3PP3/2P5/P4PPP/8",
+
+        advantages:[
+            
+        ],
+
+        drawbacks:[
+            
+        ],
+
+        plans:[
+            
+        ],
+
+        openings:[
+            
         ]
     },
 
     naj1:{
-        title:"Hanging Pawns",
+        title:"Najdorf type I",
 
-        fen:"8/8/8/2PP4/8/8/8/8",
+        fen:"8/pp3ppp/3p4/3Pp3/8/8/PPP2PPP/8",
 
         advantages:[
-            "Contrôle central"
+            
         ],
 
         drawbacks:[
-            "Peuvent devenir des cibles"
+            
         ],
 
         plans:[
-            "Avance d5-d6",
-            "Avance c5-c6"
+            
         ],
 
         openings:[
-            "Tarrasch",
-            "Semi-Tarrasch"
+            
         ]
     },
 
     naj2:{
-        title:"Hanging Pawns",
+        title:"Najdorf type II",
 
-        fen:"8/8/8/2PP4/8/8/8/8",
+        fen:"8/pp3ppp/3p4/4p3/4P3/8/PPP2PPP/8",
 
         advantages:[
-            "Contrôle central"
+            
         ],
 
         drawbacks:[
-            "Peuvent devenir des cibles"
+            
         ],
 
         plans:[
-            "Avance d5-d6",
-            "Avance c5-c6"
+            
         ],
 
         openings:[
-            "Tarrasch",
-            "Semi-Tarrasch"
+            
+        ]
+    },
+
+    hedgehog:{
+        title:"Le hérisson",
+
+        fen:"8/5ppp/pp1pp3/8/2P1P3/8/PP3PPP/8",
+
+        advantages:[
+            
+        ],
+
+        drawbacks:[
+            
+        ],
+
+        plans:[
+            
+        ],
+
+        openings:[
+            
+        ]
+    },
+
+    maroczy:{
+        title:"Le Maroczy",
+
+        fen:"8/4pp1p/pp1p2p1/8/2P1P3/8/PP3PPP/8",
+
+        advantages:[
+            
+        ],
+
+        drawbacks:[
+            
+        ],
+
+        plans:[
+            
+        ],
+
+        openings:[
+            
         ]
     },
 };
