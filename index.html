@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chess Structures - A Grandmaster Guide</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+
+<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+
+<script src="data.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+
+<!-- TON JS PRINCIPAL -->
+<script defer src="app.js"></script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Chess Structures - A Grandmaster Guide</h1>
+</header>
+
+<div id="cy"></div>
+
+<div class="modal" id="structureModal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <div class="content-grid">
+
+            <div>
+                <div id="board" style="width: 320px;"></div>
+            </div>
+
+            <div>
+
+                <h2 id="title"></h2>
+
+                <div class="section">
+                    <h3>Avantages</h3>
+                    <ul id="advantages"></ul>
+                </div>
+
+                <div class="section">
+                    <h3>Inconvénients</h3>
+                    <ul id="drawbacks"></ul>
+                </div>
+
+                <div class="section">
+                    <h3>Plans typiques</h3>
+                    <ul id="plans"></ul>
+                </div>
+
+                <div class="section">
+                    <h3>Ouvertures</h3>
+                    <ul id="openings"></ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
